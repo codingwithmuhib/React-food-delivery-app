@@ -129,7 +129,7 @@ const PizzaDetails = () => {
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
                   {" "}
-                  Price: <span>${price}</span>
+                  Price: <span> Rs{price}</span>
                 </p>
                 <p className="category mb-5">
                   Category: <span>{category}</span>
@@ -145,7 +145,7 @@ const PizzaDetails = () => {
               <div className="extraIngredientsGrid">
                 {(Object.values(ExtraIngredients)).map((ingredient) => {
                   return (
-                    <ExtraIngredient isChecked={extraIngredients.includes(ingredient)}  key={ingredient} onSelect={ingredient => updateExtraIngredients(ingredient)} ingredient={ingredient}></ExtraIngredient>
+                    <ExtraIngredient isChecked={extraIngredients?.includes(ingredient)}  key={ingredient} onSelect={ingredient => updateExtraIngredients(ingredient)} ingredient={ingredient}></ExtraIngredient>
                   )
                 })}
               </div>

@@ -17,12 +17,15 @@ const Layout = () => {
       <div>
         <Routes />
       </div>
+
+      <div className="footerSection" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', paddingLeft: '70px' }} >
       <Footer />
       <Footer />
       <Footer />
       <Footer />
       <Footer />
       <Footer />
+      </div>
 
     </div>
   );

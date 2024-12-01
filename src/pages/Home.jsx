@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 
 import { Link } from "react-router-dom";
 
-import guyImg from "../assets/images/delivery-guy.png";
+import guyImg from "../assets/images/pizzaMan.png";
 import "../styles/hero-section.css";
 
 const Home = () => {

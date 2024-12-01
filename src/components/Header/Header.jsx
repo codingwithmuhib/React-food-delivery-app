@@ -35,7 +35,7 @@ const Header = () => {
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const dispatch = useDispatch();
 
-  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+  const toggleMenu = () => menuRef.current?.classList.toggle("show__menu");
   let navigate = useNavigate();
 
   const toggleCart = () => {
@@ -47,16 +47,16 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
+        document?.body.scrollTop > 80 ||
+        document?.documentElement?.scrollTop > 80
       ) {
-        headerRef.current.classList.add("header__shrink");
+        headerRef?.current?.classList?.add("header__shrink");
       } else {
-        headerRef.current.classList.remove("header__shrink");
+        headerRef?.current?.classList?.remove("header__shrink");
       }
     });
 
-    return () => window.removeEventListener("scroll");
+    return () => window?.removeEventListener("scroll");
   }, []);
 
   return (
@@ -65,7 +65,7 @@ const Header = () => {
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
           <div className="logo" onClick={() => navigate("/home")}>
             <img src={logo} alt="logo" />
-            <h5>Tasty Treat</h5>
+            <h5>CheesySlice</h5>
           </div>
           {/* ======= menu ======= */}
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
