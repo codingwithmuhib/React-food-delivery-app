@@ -1,11 +1,10 @@
 .footer {
   padding: 50px 0px;
-  background: #fde4e4;
   display: flex;
   text-align: start;
   justify-content: center;
-  gap: 8rem;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .footer__logo img {
@@ -16,7 +15,7 @@
 .footer__logo h5 {
   font-weight: 600;
   font-size: 1rem;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .footer__logo p {
@@ -46,6 +45,10 @@
   font-size: 1.1rem;
   color: #212245;
   font-weight: 600;
+}
+
+.FooterWrapper{
+
 }
 
 @media only screen and (max-width: 768px) {
